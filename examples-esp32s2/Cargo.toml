@@ -8,7 +8,7 @@ edition = "2021"
 [dependencies]
 embedded-svc.workspace = true
 bleps.workspace = true
-embassy-executor = { workspace = true, optional = true }
+embassy-executor = { workspace = true, optional = true, features=["executor-thread","arch-riscv32"] }
 embassy-time.workspace = true
 embassy-futures.workspace = true
 futures-util.workspace = true
